@@ -137,4 +137,4 @@ Now, let's see our workflows in action\!
 8.  **Observe the Deployment:** Now, go to the **Actions** tab in your repository. You will see the "Deploy to Docker Hub" workflow has started running because you just pushed a new commit to `main` by merging.
 9.  **Verify on Docker Hub:** Once the deployment workflow is complete, go to your Docker Hub account. You will see a new image in your repository tagged with the latest Git commit SHA.
 
-Congratulations\! You have successfully built two distinct CI/CD pipelines to automatically validate and deploy your application.
+Congratulations\! You have successfully built two distinct CI/CD pipelines to automatically validate and deploy your application.!!
