@@ -34,6 +34,9 @@ RUN rm -rf /etc/nginx/conf.d
 # (See the note below on creating a 'nginx.conf' file)
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
+##
+RUN apk update && apk upgrade expat=2.7.3-r0
+
 # Copy the static build files from the 'builder' stage into the Nginx public directory
 # The 'build' folder is the output directory of 'npm run build'
 COPY --from=builder /app/build /usr/share/nginx/html
